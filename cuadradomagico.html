@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var rango = prompt("Introduce rango (impar)")
+
+		//document.write("<h2>"+CUADRADO MÁGICO+rango+"x"+rango+"</h2>");//
+
+		///Crear array vacia de numeros///
+
+		var fila = rango;
+
+		var columna = parseInt(rango / 2);
+
+		//////////////////////////////////////////////////////////////////////
+/*
+		for (var i = 1; i < (rango * rango); i++) {
+
+			magq[fila][columna] = i;
+			fila = fila - 1;
+			columna++;
+
+			if (fila = -1) {
+				fila = rango - 1;
+			}
+			if (columna >= rango) {
+				columna = 0;
+			}
+			if (magq[fila][columna] != undefined) {
+				fila = fila + 2;
+				columna--;
+			}
+		}
+		*/
+
+		///////Crear tabla///////
+		var tab = rango * rango;
+		document.write("<table border=1>")
+		for (x = 0; x < tab; x++) {
+			document.write("<tr>")
+			for (y = 0; y < tab[x]; y++) {
+				document.write("<td>" + tab[x][y] + "</td>")
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>")
+
+	</script>
+</body>
+
+</html>
